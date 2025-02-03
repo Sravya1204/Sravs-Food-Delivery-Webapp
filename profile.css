@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #fc8019; /* Swiggy orange */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+a {
+    color: #22c55e; /* Swiggy green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+section h2 {
+    color: #fc8019;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.order {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.order p {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.order p strong {
+    color: #fc8019;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .order p {
+        font-size: 0.9em;
+    }
+}

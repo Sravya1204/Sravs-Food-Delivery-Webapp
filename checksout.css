@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff3e6;
+    color: #333333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fc8019;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: #22c55e;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: #16a34a;
+    transform: translateY(-1px);
+}
+
+/* Checkout Container */
+.checkout-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 5rem auto 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Total Display */
+.total-display {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.total-display h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #444;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #e0e0e0;
+    background-color: #fafafa;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #fc8019;
+    background-color: white;
+}
+
+/* Button Group */
+.button-group {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Buttons */
+.confirm-btn {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #16a34a;
+    transform: translateY(-1px);
+}
+
+.cancel-btn {
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #e67112;
+    transform: translateY(-1px);
+}
